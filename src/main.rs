@@ -1,9 +1,9 @@
 fn main() {
-    let mut my_array = [3, 1, 8, 15, 6, 32];
+    let my_array: &mut [u32] = &mut [3, 1, 8, 15, 6, 32];
     let mut low_index: u8 = 0;
     let mut high_index: u8 = (my_array.len() - 1) as u8;
     let mut middle_index: u8;
-    const TARGET_NUMBER: i32 = 7;
+    const TARGET_NUMBER: u32 = 7;
     println!("Target number: {}", TARGET_NUMBER);
     println!("Initial array: {:?}", my_array);
     my_array.sort();
