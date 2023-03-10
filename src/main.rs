@@ -14,7 +14,6 @@ fn get_user_input_u16_value() -> u16 {
         }
     };
 
-    println!("The number you entered is: {}", number);
     number
 }
 
@@ -25,7 +24,6 @@ fn main() {
     let mut middle_index: u8;
     println!("Please enter the target number [0, 65,535]:");
     let target_number: u16 = get_user_input_u16_value();
-    println!("Target number: {}", target_number);
     println!("Initial array: {:?}", my_array);
     my_array.sort();
     println!("Sorted array: {:?}", my_array);
